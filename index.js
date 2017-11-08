@@ -42,6 +42,7 @@ const GOOGLEHOME_EVENT_TYPE ={
 const deviceName = 'Google Home';
 googlehome.device(deviceName,'ja');
 googlehome.accent('ja'); // uncomment for british voice
+googlehome.ip(appconfig.GOOGLEHOME_DEVICE_ADDRESS);
 
 const check_beforemin = 5; // 何分まえまで直前のメッセージを再生するか
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
