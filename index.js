@@ -362,9 +362,6 @@ app.listen(port, () => {
   ngrok.connect({
     addr: port,
     region: 'ap'
-//    auth: 'tamago:s51510s51510',
-//    subdomain: 'tamagoaaaa',
-//    configPath: '/home/pi/.ngrok2/ngrok.yml'
   } , function (err, url) {
     console.log(url);
     console.log(port);
