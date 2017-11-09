@@ -36,6 +36,26 @@ googlehome-linebot requires the following to run:
 - ###### googlehomeからLINEメッセージの読み上げ
   - [googlehome] -> [ifttt] -> [firebase] -> **[googlehome-linebot]** -> [googlehome]
 
+##### appconfig.jsonの作成
+サービスを起動するには以下の情報が必要となります。
+- LINE Messaging API
+  - Channel Access Token
+  - Channel Secret
+- firebase
+  - サービスアカウントで発行する秘密鍵
+  - LINEBOT用で使用するDatabaseのURL
+
+上記情報を含んだ **appconfig.json** をルートに配置してください。
+
+appconfig.json
+```json
+{
+  "LINE_CHANNEL_ACCESS_TOKEN": "○○○○○○○○○",
+  "LINE_CHANNEL_SECRET": "○○○○○○○○○",
+  "FIREBASE_SERVICEACCOUNT_PRIVATEKEY": "○○○○○○○○○.json",
+  "FIREBASE_DATABASE_URL": "https://○○○○○○○○○.firebaseio.com/"
+}
+```
 詳細のサービス連携の使用方法は以下を参照してください。
 
 [TBA]
