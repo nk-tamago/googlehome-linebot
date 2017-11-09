@@ -1,7 +1,7 @@
 {
-  "name": "echo-bot",
+  "name": "googlehome-linebot",
   "version": "1.0.0",
-  "description": "An example LINE bot just to echo messages",
+  "description": "",
   "main": "index.js",
   "dependencies": {
     "@line/bot-sdk": "^5.0.0",
