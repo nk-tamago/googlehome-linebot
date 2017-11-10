@@ -44,6 +44,8 @@ googlehome-linebot requires the following to run:
 - firebase
   - サービスアカウントで発行する秘密鍵
   - LINEBOT用で使用するDatabaseのURL
+- Google Home
+  - 割り当てられているローカルIPアドレス
 
 上記情報を含んだ **appconfig.json** をルートに配置してください。
 
@@ -53,12 +55,13 @@ appconfig.json
   "LINE_CHANNEL_ACCESS_TOKEN": "○○○○○○○○○",
   "LINE_CHANNEL_SECRET": "○○○○○○○○○",
   "FIREBASE_SERVICEACCOUNT_PRIVATEKEY": "○○○○○○○○○.json",
-  "FIREBASE_DATABASE_URL": "https://○○○○○○○○○.firebaseio.com/"
+  "FIREBASE_DATABASE_URL": "https://○○○○○○○○○.firebaseio.com/",
+  "GOOGLEHOME_DEVICE_ADDRESS":"xx.xx.xx.xx"
 }
 ```
 詳細のサービス連携の使用方法は以下を参照してください。
 
-[TBA]
+https://qiita.com/nk-tamago/items/b4039195ca4fc24a7f86
 
 ## Install
 事前に以下のインストールが必要
