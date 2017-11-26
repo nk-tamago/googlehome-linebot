@@ -7,9 +7,10 @@ const nedb = require('nedb');
 const googlehome = require('google-home-notifier');
 const bodyParser = require('body-parser');
 const firebase = require("firebase-admin");
-const serverPort = 8080;
 
 const appconfig = require('./appconfig.json');
+
+const serverPort = appconfig.SERVER_PORT;
 
 // LINE BOT関係
 const linePushSource =  { source : {type : "none"} };
@@ -68,7 +69,6 @@ const db = new nedb({
 // create Express app
 // about Express itself: https://expressjs.com/
 const app = express();
-
 
 // googlehome用webhook
 app.post('/googlehome-webhook', urlencodedParser, (req, res) => {
@@ -357,7 +357,7 @@ function getLineDisplayName(source) {
 }
 
 // listen on port
-const port = process.env.PORT || 3000;
+const port = serverPort;
 app.listen(port, () => {
 /*
   ngrok.connect({

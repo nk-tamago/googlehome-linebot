@@ -56,7 +56,8 @@ appconfig.json
   "LINE_CHANNEL_SECRET": "○○○○○○○○○",
   "FIREBASE_SERVICEACCOUNT_PRIVATEKEY": "○○○○○○○○○.json",
   "FIREBASE_DATABASE_URL": "https://○○○○○○○○○.firebaseio.com/",
-  "GOOGLEHOME_DEVICE_ADDRESS":"xx.xx.xx.xx"
+  "GOOGLEHOME_DEVICE_ADDRESS":"xx.xx.xx.xx",
+  "SERVER_PORT":3000
 }
 ```
 詳細のサービス連携の使用方法は以下を参照してください。
